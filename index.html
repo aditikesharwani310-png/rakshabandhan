@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Rakshabandhan!🍫</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Screen 1: Intro -->
+    <div id="screen-intro" class="card">
+      <img class="img-placeholder" src="shinchan1.gif" alt="shinchan1" />
+
+      <h2>I have made something for you!✨</h2>
+      <p>Do you wanna see it?</p>
+      <div class="btn-group">
+
+        <button class="btn" onclick="showScreen('screen-gifts')">YES🥰</button>
+
+        <button class="btn" onclick="showScreen('screen-dare')">NO😜</button>
+      </div>
+    </div>
+
+    <!-- Screen 2:How Dare You(NO Trap) -->
+     <div id="screen-dare" class="card hidden">
+        <img class="img-placeholder" src="shinchan2.gif" alt="shinchan2"/>
+
+        <h2>HOW DARE YOU! 😠</h2>
+        <p>That is not an option.Click below to try again!</p>
+
+        <button class="btn" onclick="showScreen('screen-intro')">TRY AGAIN</button>
+     </div>
+
+     <!-- Screen 3: Gift selector -->
+      <div id="screen-gifts" class="card hidden">
+        <h2>Each gift has a surprise for you! 🎁</h2>
+        <p>Click on a box to open it:</p>
+
+        <div class="gifts-container">
+            <span class="gift-box" onclick="showScreen('screen-award')">🎁</span>
+            <span class="gift-box" onclick="showScreen('screen-youare')">🎁</span>
+            <span class="gift-box" onclick="showScreen('screen-gallery')">🎁</span>
+        </div>
+      </div>
+
+    <!-- Screen4: Best Sister/Broter Award  -->
+     <div id="screen-award" class="card hidden">
+        <div class="certificate">
+            <h2>🏆 BEST SIBLING AWARD🏆</h2>
+            <p style="font-size: 0.9rem; color:#666;">This Award is proudly presented to:</p>
+            <h1 style="color:#d81b60; margin: 10px 0;">[YOU]</h1>
+
+            <p style="font-size:0.95rem;">For being the most precious person, listening to all my rants and always having my back!</p>
+            </div>
+
+            <button class="btn" onclick="showScreen('screen-gifts')">Back to Gifts</button>
+     </div>
+
+     <!-- Screen 5: YOU ARE MY.. -->
+
+     <div id="screen-youare" class="card hidden">
+        <h2>YOU ARE MY...👀</h2>
+        <ul class="trait-list">
+            <li>📍Google Maps(Guide)</li>
+            <li>🍕 Food & Clothes Stealer</li>
+            <li> 💳Personal Bank Account</li>
+            <li>😆Entertainment source</li>
+            <li>💖 Lifeline & Bestie by choice</li>
+        </ul>
+        <button class="btn" onclick="showScreen('screen-gifts')">Back to Gifts</button>
+     </div>
+
+     <!-- Screen 6:Photo Memories -->
+      <div id="screen-gallery" class="card hidden">
+        <h2>MEMORIES 📸</h2>
+        <div class="gallery">
+            <img src="memories 1.jpg" alt="Memory1"/>
+            <img src="memories 2.jpg" alt="Memory2"/>
+            <img src="memories 3.jpg" alt="Memory3"/>
+            <img src="memories 4.jpg" alt="Memory4"/>
+            <img src="memories 5.jpg" alt="Memory5"/>
+            <img src="memories 6.jpg" alt="Memory6"/>
+            <img src="memories 7.jpg" alt="Memory7"/>
+            <img src="memories 8.jpg" alt="Memory8"/>
+        </div>
+        <button class="btn" onclick="showScreen('screen-gifts')">Back to Gifts</button>
+      </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>
